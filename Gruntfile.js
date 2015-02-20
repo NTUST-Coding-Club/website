@@ -16,7 +16,8 @@ module.exports = function(grunt) {
                   'src/jquery.scrollex.min.js',
                   'src/skel.min.js',
                   'src/skel-layers.min.js',
-                  'src/init.js'
+                  'src/init.js',
+                  'src/lightbox.js'
               ]
             }
         }
@@ -24,7 +25,7 @@ module.exports = function(grunt) {
     cssmin: {
         target: {
             files: {
-                'build/build.min.css': ['css/skel.css','css/style.css','css/style-xlarge.css']
+                'build/build.min.css': ['css/lightbox.css']
             }
         }
     },
