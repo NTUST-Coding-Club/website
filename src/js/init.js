@@ -9,12 +9,12 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			global: { href: 'css/style.css', containers: '70em', grid: { gutters: ['2.5em', 0] } },
-			xlarge: { media: '(max-width: 1680px)', href: 'css/style-xlarge.css' },
-			large: { media: '(max-width: 1280px)', href: 'css/style-large.css', containers: '90%', viewport: { scalable: false } },
-			medium: { media: '(max-width: 980px)', href: 'css/style-medium.css', containers: '100%!' },
-			small: { media: '(max-width: 736px)', href: 'css/style-small.css' },
-			xsmall: { media: '(max-width: 480px)', href: 'css/style-xsmall.css' }
+			global: { href: 'build/css/style.css', containers: '70em', grid: { gutters: ['2.5em', 0] } },
+			xlarge: { media: '(max-width: 1680px)', href: 'build/css/style-xlarge.css' },
+			large: { media: '(max-width: 1280px)', href: 'build/css/style-large.css', containers: '90%', viewport: { scalable: false } },
+			medium: { media: '(max-width: 980px)', href: 'build/css/style-medium.css', containers: '100%!' },
+			small: { media: '(max-width: 736px)', href: 'build/css/style-small.css' },
+			xsmall: { media: '(max-width: 480px)', href: 'build/css/style-xsmall.css' }
 		},
 		plugins: {
 			layers: {

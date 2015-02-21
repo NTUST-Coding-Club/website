@@ -24,10 +24,13 @@ module.exports = function(grunt) {
         }
     },
     cssmin: {
-        target: {
-            files: {
-                'build/build.min.css': ['css/lightbox.css']
-            }
+        main: {
+          files: [{
+                    expand: true,
+                    cwd: 'src/css/',
+                    src: ['**/*.css'],
+                    dest: 'build/css/'
+                  }]
         }
     },
     watch: {
@@ -51,7 +54,6 @@ module.exports = function(grunt) {
             livereload: true
         }
         
-
     },
 
     copy: {
@@ -61,6 +63,19 @@ module.exports = function(grunt) {
                   cwd: 'src/images/',
                   src: '**',
                   dest: 'build/images/'
+                }]
+      },
+      css_depend_file: {
+        files:  [{
+                  expand: true,
+                  cwd: 'src/fonts/',
+                  src: '**',
+                  dest: 'build/fonts/'
+                },{
+                  expand: true,
+                  cwd: 'src/css/images/',
+                  src: '**',
+                  dest: 'build/css/images/'
                 }]
       }
     }
