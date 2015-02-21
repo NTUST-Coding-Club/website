@@ -1665,7 +1665,9 @@
 					color: inherit;
 				}
 
+
 /* custom */
+
 .text-left{
 	text-align: left;
 }
@@ -1708,4 +1710,7 @@ h2 small{
 }
 section.sperate {
 	height: 50vh;
+}
+.image-title{
+	margin-top:5px;
 }

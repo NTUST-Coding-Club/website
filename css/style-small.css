@@ -64,18 +64,14 @@
 			border-top-width: 0.2em !important;
 			padding: 3.25em 1.5em 1.25em 1.5em !important;
 		}
-		.spotlight .goto-next{
-			display: none;
-		}
+		
 
 /* Wrapper */
 
 	.wrapper {
 		padding: 3.25em 1.5em 1.25em 1.5em;
 	}
-	.wrapper .goto-next{
-		display: none;
-	}
+	
 /* Header */
 
 	#header {
