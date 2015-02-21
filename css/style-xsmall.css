@@ -10,10 +10,6 @@
 		min-width: 320px;
 	}
 
-	body, input, select, textarea {
-		font-size: 12pt;
-	}
-
 /* List */
 
 	ul.actions {
@@ -62,18 +58,21 @@
 	.spotlight .content {
 		padding: 3em 1.25em 1em 1.25em !important;
 	}
-
+	
 /* Wrapper */
 
 	.wrapper {
 		padding: 3em 1.25em 1em 1.25em;
 	}
 
+	
 /* Banner */
 
 	#banner .content {
 		padding: 3em 1.5625em 5.25em 1.5625em;
 	}
+
+	
 
 /* Footer */
 

@@ -228,7 +228,7 @@
 					off = function() {
 
 						// Clear spotlight's background.
-							$this.css('background-image', '');
+							// $this.css('background-image', '');
 
 						// Disable transitions (if supported).
 							if (skel.canUseProperty('transition')) {

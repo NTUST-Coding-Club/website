@@ -6,10 +6,6 @@
 
 /* Basic */
 
-	body, input, select, textarea {
-		font-size: 12pt;
-	}
-
 	h2 {
 		font-size: 1.5em;
 	}
@@ -68,13 +64,18 @@
 			border-top-width: 0.2em !important;
 			padding: 3.25em 1.5em 1.25em 1.5em !important;
 		}
+		.spotlight .goto-next{
+			display: none;
+		}
 
 /* Wrapper */
 
 	.wrapper {
 		padding: 3.25em 1.5em 1.25em 1.5em;
 	}
-
+	.wrapper .goto-next{
+		display: none;
+	}
 /* Header */
 
 	#header {
@@ -91,6 +92,8 @@
 		#banner:before {
 			height: calc(100vh - 44px);
 		}
+		
+		
 
 		#banner .content {
 			padding: 4.0625em 1.5em 4.875em 1.5em;
@@ -216,3 +219,5 @@
 	#footer {
 		padding: 3.25em 1.5em;
 	}
+
+/* Custom */
