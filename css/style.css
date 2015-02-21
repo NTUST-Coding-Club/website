@@ -1696,13 +1696,17 @@ h2 small{
 	width: 2em;
 	z-index: 1;
 }
-.wrapper .goto-next{
+.wrapper .goto-next {
 	position: relative;
 }
-.table-course table td{
+.table-course table td {
 	padding: 0.5em;
 	
 }
-.table-course table tr{
+.table-course table tr {
 	border: 0px;
+}
+section.sperate {
+	height: 50vh;
+	
 }
