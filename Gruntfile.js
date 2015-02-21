@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
 
+  var mozjpeg = require('imagemin-mozjpeg');
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -10,14 +11,14 @@ module.exports = function(grunt) {
             },
             files: {
               'build/build.min.js':[
-                  'src/jquery.min.js',
-                  'src/jquery.scrolly.min.js',
-                  'src/jquery.dropotron.min.js',
-                  'src/jquery.scrollex.min.js',
-                  'src/skel.min.js',
-                  'src/skel-layers.min.js',
-                  'src/init.js',
-                  'src/lightbox.js'
+                  'src/js/jquery.min.js',
+                  'src/js/jquery.scrolly.min.js',
+                  'src/js/jquery.dropotron.min.js',
+                  'src/js/jquery.scrollex.min.js',
+                  'src/js/skel.min.js',
+                  'src/js/skel-layers.min.js',
+                  'src/js/init.js',
+                  'src/js/lightbox.js'
               ]
             }
         }
@@ -31,30 +32,47 @@ module.exports = function(grunt) {
     },
     watch: {
         cssWatch: {
-            files: 'css/*.css',
+            files: 'src/css/*.css',
             tasks: ['cssmin'],
         },
         jsWatch: {
-            files: 'src/*.js',
+            files: 'src/js/*.js',
             tasks: ['uglify'],
         },
         normalWatch: {
             files: ['**.html']
             
         },
+        imagesWatch: {
+          files: 'src/images/**',
+          tasks: ['copy:images']
+        },
         options: {
             livereload: true
         }
         
 
+    },
+
+    copy: {
+      images: {
+        files: [{
+                  expand: true,
+                  cwd: 'src/images/',
+                  src: '**',
+                  dest: 'build/images/'
+                }]
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['cssmin','uglify','copy','watch']);
 
 };
