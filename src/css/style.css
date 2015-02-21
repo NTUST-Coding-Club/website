@@ -46,7 +46,7 @@
 	}
 
 		a:hover {
-			color: #59b377 !important;
+			color: #59b377;
 			border-bottom-color: transparent;
 		}
 
@@ -1330,6 +1330,13 @@
 				.wrapper.style2 input[type="button"].special:active,
 				.wrapper.style2 .button.special:active {
 					background-color: rgba(255, 255, 255, 0.25) !important;
+				}
+				.wrapper.style2 a{
+					color: white;
+				}
+				.wrapper.style2 a:hover{
+					color: white;
+
 				}
 
 		.wrapper.fade-down > .container {
