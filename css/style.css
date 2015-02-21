@@ -1675,10 +1675,34 @@
 .text-right{
 	text-align: right;
 }
+small{
+	font-size: 85%;
+}
+h2 small{
+	font-size: 50%;
+	color: #CCC9CC;
+
+}
+.wrapper .goto-next:before {
+	background-image: url("images/arrow.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: block;
+
+	height: 1.5em;
+	margin: -0.75em 0 0 -1em;
+	width: 2em;
+	z-index: 1;
+}
 .wrapper .goto-next{
-	bottom: 26%;
+	position: relative;
+}
+.table-course table td{
+	padding: 0.5em;
 	
 }
-small{
-	font-size:85%;
+.table-course table tr{
+	border: 0px;
 }
